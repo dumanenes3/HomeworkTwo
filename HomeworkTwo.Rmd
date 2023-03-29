@@ -1,6 +1,6 @@
 ---
 title: "Homework 2"
-author: "Write Your Name and Student ID Here!"
+author: "Enes Duman 20080481"
 output: pdf_document
 ---
 
@@ -21,39 +21,52 @@ opts_chunk$set(fig.align="center", fig.height=4, fig.width=5.5)
 
 **Question 2** Add the numbers 3 1 4 1 5 9 2 6 without *using the addition sign*.
 
+
 ```{r}
-# Write Your Answer Here!
+sum(3, 1, 4, 1, 5, 9, 2, 6 )
+
 ```
 
 **Question 3** Create a vector named `x` containing the series -1, -0.9, ..., 0, 0.1, ..., 0.9, 1 and print the result.
 
 ```{r}
-# Write Your Answer Here!
+x <- seq(-1, 1, by = 0.1)
+x
+
 ```
 
 **Question 4** How do we get R to print the text "SBF!" 30 times without repeatingly typing it?
 
 ```{r}
-# Write Your Answer Here!
+y <- c("SBF!")
+
+rep(y,30)
+
 ```
 
 **Question 5** Create two vectors named "wizards" and "ranking".
 Let the "wizards" include the names Harry, Ron, Fred, George and Sirius, while the "ranking" includes the numbers 4, 2, 5, 1, and 3.
 
 ```{r}
-# Write Your Answer Here!
+wizards<- c("Harry","Ron", "Fred", "George", "Sirius")
+ranking <-  c(4, 2, 5, 1, 3)
 ```
 
 **Question 6** Print/extract the second element of the wizards vector.
 
 ```{r}
-# Write Your Answer Here!
+wizards[c(2)]
+
 ```
 
 **Question 7** Replace the names Fred, George and Sirius in the vector 'wizards' with the names Hermione, Ginny, and Malfoy.
 
 ```{r}
-# Write Your Answer Here!
+wizards[3] <- "Hermione"
+wizards[4] <- "Ginny"
+wizards[5] <- "Malfoy"
+wizards
+
 ```
 
 **Question 8** Anyone who hasn't read Harry Potter (like the professor of this class) needs tags to know who these characters are.
@@ -61,7 +74,7 @@ Name the elements of the `wizards` vector as **Lead**, **Friend**, **Friend**, *
 Print the results.
 
 ```{r}
-# Write Your Answer Here!
+wizards <- c("Harry", "Ron", "Hermione", "Ginny", "Malfoy")
 ```
 
 **Question 9** 26 students entered the PEC206 midterm exam.
